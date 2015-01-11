@@ -132,10 +132,13 @@ Federation? Too old.
 Give us decentralization!
 -------------------------
 
+not sure about this slide: we also might want to use DHT here instead of "each user is a server" model which seem to be more reliable, but...
+
 * PubSub queuening
 * each user can become a server now!
 * different devices of the same user can become a cluster
 * third-party services which can provide fault tolerance can work in a plug&play manner...
+
 
 ----
 
