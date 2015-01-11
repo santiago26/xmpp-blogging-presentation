@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Exo 2+2);
+@font-face {
+	font-family: "Caviar Dreams";
+	font-style: normal;
+	src: url("/assets/CaviarDreams.ttf");
+}
+
+body {
+	background-color: #658A55;
+	color: #FFFFFF;
+	font-family: "Caviar Dreams";
+}
+
+* {
+	margin: 0px;
+}
+
+p,li {
+	line-height: 1.1em;
+}
+h1 {
+	font-size: 128px;
+	color: #A2CC72;
+	font-family: "Exo 2";
+	margin: 20px;
+}
+h2 {
+	font-size: 92px;
+	color: #CFD490;
+	font-family: "Exo 2";
+	margin: 10px;
+}
+.body {
+	font-size: 80px;
+}
+a {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	border-radius: 0.2em;
+	color: inherit;
+	padding: 0 0.1em;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+}
+a:hover, a:focus {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.step {
+	height: 720px;
+	width: 1280px;
+	position: relative;
+	font-size: 50px;
+}
