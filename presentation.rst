@@ -69,11 +69,6 @@ XMPP & PubSub/PEP
 * XMPP is well-known stable, many-times-implemented federated network
 * which puts **security** into the main corner
 * and is highly accessible from any perspective
-
-  * platforms
-  * networks
-  * protocols
-
 * PubSub is a well-known design pattern which makes it not necessary to poll for changes
 * *C-C-C-COMBO!*
 
@@ -101,8 +96,6 @@ Comments
 * blogs are not interested without feedback from readers
 * need to store comments
 * can use generic PubSub node for that aim, linking each post to it's own thread
-  * can have more than one thread per post!
-  * still can receive updates in *realtime* without polling
 * thanks to XMPP's federation you don't need to register on all the blog services anymore, just use your JID to identify!
 
 ----
@@ -117,11 +110,8 @@ Aggregation
 * aggregators are the services that are subscribed to everyone
 
   * and receive updates *realtime*
-  * and process them just as google processes web nowadays
   * and can provide extra feeds in the same format by specific criterias
-  * which are also *realtime*
   * and there can be *unlimited* number of such aggregators
-  * each of them can work it's own special way
   * diversity!
 
 ----
@@ -132,13 +122,9 @@ Federation? Too old.
 Give us decentralization!
 -------------------------
 
-not sure about this slide: we also might want to use DHT here instead of "each user is a server" model which seem to be more reliable, but...
-
-* PubSub queuening
-* each user can become a server now!
-* different devices of the same user can become a cluster
-* third-party services which can provide fault tolerance can work in a plug&play manner...
-
+* look at this as the protocol, not the implementation
+* the same clients will be able to work on every provider which uses the protocol
+* underlaying protocol can be completely decentralized!
 
 ----
 
@@ -196,15 +182,11 @@ XEP-0351: Recipient Server-side Filtration
 
 * with current scheme of entity capabilities negotiating:
 
-  * if you have one-way presence subscription then only one side is aware about others' capabilities
-  * and when we're filtering out the unnecessary events, we just don't know which ones to keep!
-  * because sending server sometimes can't know your caps if you're not the users of the same one
+  * one-way presence subscription doesn't work
 * solution?
 
-  * send all the events to receiving server!
-  * let it decide
-* must be backwards compatible and fallback to the old model for servers that have no support
-* also, allows to control which types of events to receive per-client!
+  * send all the events to receiving server and let it decide!
+* backwards compatible
 * implementations **WANTED**.
 
 ----
