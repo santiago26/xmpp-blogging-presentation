@@ -102,20 +102,6 @@ Comments
 
 :data-rotate: 120
 
-Aggregation
-===========
-
-* sounds good but what about search, stats? how can I know who is the biggest blogger in the world?
-* don't try to resemble centralized web approaches!
-* aggregators are the services that are subscribed to everyone
-
-  * and receive updates *realtime*
-  * and can provide extra feeds in the same format by specific criterias
-  * and there can be *unlimited* number of such aggregators
-  * diversity!
-
-----
-
 Federation? Too old.
 =====================
 
@@ -218,5 +204,44 @@ Current PubSub problems
 I want to try!
 ================
 
-Contacts and links here
+Implementations
+-----------------
+
+* LiJ (Live Jabber)
+* Salut à Toi (aka SàT)
+* Movim
+* Jappix
+
+----
+
+LiJ (Live Jabber)
+==================
+
+* CLI-based gateway for clients without native support
+
+  * uses XHTML-IM for pretty output if available
+* Web aggregator (http://b.habahaba.im)
+* Gateways to other platforms
+* Habahaba (without blogging yet)
+
+----
+
+LiJ
+====
+
+.. image:: assets/lij-shot.png
+    :height: 600px
+    :width: 800px
+
+----
+
+Aggregators
+===========
+
+* aggregators are the services that are subscribed to everyone
+
+  * and receive updates *realtime*
+  * and can provide extra feeds in the same format by specific criterias
+  * and there can be *unlimited* number of such aggregators
+  * diversity!
 
